@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+ overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar {
+  background-color: transparent;
+  padding-top: 2%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  
+}
+
+.navbar-nav {
+  margin-right: 15%;
+}
+
+.navbar-toggler {
+  margin-right: 4%;
+}
+
+.nav-item {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-right: 50px;
+}
+
+.logo-visitando {
+  padding-left: 16%;
+  width: 260px;
+}
+
+
+header {
+  background-image: linear-gradient(90deg,rgba(238, 38, 85, 0.4),rgba(0, 51, 102, 0.6)), url(6-teatro.jpg);
+  background-attachment: fixed; /*efeito parallax*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;	
+  color: #FFF;
+  height: 85vh;
+}
+
+.header-texto  {
+	display: flex; /*propriedade que permite funcionar as propriedades de baixo*/
+	justify-content: space-around; /*propriedade que faz ficar no centro*/
+	align-items: center; /*propriedade que faz ficar no centro*/
+	margin: auto;
+	text-align: center;	
+
+}
+
+.header-texto h1 {
+	position: absolute;
+	top:32%;
+	font-size: 85px;	
+	font-weight: 600;
+	letter-spacing: 17px;
+}
+
+
+.breadcrumb {		
+  background: transparent;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  left: 2%;
+  position: absolute;
+}
+
+.breadcrumb-item a{
+  text-decoration: none;
+  list-style-type: none;
+  color: #8F8F8F;
+}
+
+.breadcrumb-item a:hover{
+  color: #3E3D3D;
+}
+
+.active{
+   color: #3B3A3A;
+   font-weight: 600;
+}
+
+.container-article{
+	width: 60%;
+	margin: auto;
+
+}
+
+article {
+	overflow: hidden;
+	justify-content: space-around; 
+	margin-top: 90px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3E3D3D;
+  letter-spacing: 3px;
+
+}
+
+p {
+  margin-top: 20px;
+  line-height: 25px;
+  font-size: 16px;
+  color: #3E3D3D;
+}
+
+
+hr {
+  width: 240px;
+  border: 2px solid #0aa4b5;
+  margin: 50px auto;
+ 
+}
+
+
+.container-galeria {
+  width: 60%;
+  margin: auto;
+
+}
+
+#galeria {
+  margin-top: 40px;
+  margin-bottom: 5%;
+  width: 98%;
+}
+
+#galeria .lightbox img:hover {
+    transform: scale(1.008);
+}
+
+.card {
+	border: none;
+	margin-bottom: 20px;
+	
+}
+
+.container-localizacao {
+    width: 60%;
+    margin: auto;
+}
+
+
+.embed-responsive {
+  width: 98%;
+  margin-top: 40px;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  background-color: #001343;
+  margin-top: 90px;
+}
+
+footer p {
+  color: #FFF;
+  padding-top: 35px;
+
+}
+
+@media (min-width: 1500px) {
+
+
+	.scroll-down {
+		bottom: 150px !important;
+	}
+
+	.navbar {
+
+		padding-top: 4% !important;
+
+	}
+
+	.nav-item {
+		font-size: 1.6rem !important;
+	}
+
+	.logo-visitando {
+
+		width: 280px !important;
+	}
+} 
+
+
+@media only screen and (max-width: 920px) {
+
+  .nav-item {
+    font-size: 18px !important;
+    padding-right: 20px !important;
+  }
+  .navbar-nav {
+    margin-right: 5px !important;
+  }
+
+  .logo-visitando {
+    width: 165px !important;
+  }
+
+   header {
+  height: 70vh !important;
+
+  }
+
+  .header-texto h1 {
+	position: absolute !important;
+	top:28% !important;
+	font-size: 65px !important;
+	letter-spacing: 20px !important;
+  }
+
+  .container-article {
+  	width: 70% !important;
+
+  }
+  .container-galeria {
+  	width: 70% !important;
+
+  }
+
+  .container-localizacao {
+    width: 70% !important;
+  }
+
+
+}
+
+@media only screen and (max-width: 575px) {
+
+  html {
+    overflow-x: hidden !important;
+   }
+
+  .logo-visitando {
+    width: 150px !important;
+  }
+
+
+  .nav-item {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+
+  .navbar {
+    top:0;
+    background: #EE2655 !important;
+    width: 100% !important;
+  }
+
+  header {
+  height: 50vh !important;
+
+  }
+
+  .header-texto h1 {
+	position: absolute !important;
+	top:24% !important;
+	font-size: 37px !important;
+	letter-spacing: 8px !important;
+  }
+
+  .container-article {
+  	width: 88% !important;
+
+  }
+  .container-galeria {
+  	width: 88% !important;
+  }
+
+  .container-localizacao {
+    width: 88% !important;
+  }
+
+  .embed-responsive {
+    height: 270px !important;
+  }
+
+  footer p{
+    font-size: 14px !important;
+  }
+
+
+   
+}

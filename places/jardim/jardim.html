@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8"/>
+    <!--  Faz o site ocupar todo o espaço disponível na janela (responsividade) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Força o IE a usar as definições de CSS mais recentes e evita que ele 
+    	quebre o visual, no Modo de Compatibilidade. -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jardim Botânico | Visitando São Paulo</title>
+    <link href="../../img/simbolo.png" rel="icon">
+
+    <!-- Plugin efeito "slide"-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Plugin lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">     
+
+    <!-- Arquivo CSS Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/bootstrap.min.css">
+
+    <!-- Arquivo CSS Principal -->
+    <link rel="stylesheet" type="text/css" href="jardim.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700">
+  </head>
+
+  <body>
+  		<!-- Header -->	
+      <header class="container-fluid">
+        <div class="row">
+
+         <!-- Navegação -->
+         <nav class="navbar navbar-expand-sm navbar-dark">       
+          <a class="navbar-logo" href="index.html">
+            <img src="../../img/logo.png" class="logo-visitando" alt="Logo Visitando">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Menu hambúrguer">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="../../index.html">home</a></li>
+              <li class="nav-item"><a class="nav-link" href="../../explorar.html">explorar</a></li>
+              <li class="nav-item"><a class="nav-link" href="../../pqsp.html">por que sp?</a></li>
+            </ul>
+          </div>  
+        </nav>
+
+         <!-- Texto header -->
+         <section class="header-texto">
+          <h1 class="text-center" data-aos="fade-up" data-aos-duration="1300">JARDIM<br> BOTÂNICO</h1>
+        </section>     
+      </div>
+      </header>
+
+      <!-- Breadcrumbs -->
+      <section class="row">
+       <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="../../explorar.html">Explorar</a></li>
+        <li class="breadcrumb-item active">Jardim Botânico</li>
+      </ol>
+    </section>
+
+      <!-- Conteúdo -->
+      <main id="conteudo">
+
+        <article>
+        <div class="row container-article">
+          <h3>DESCRIÇÃO</h3>
+          <p>Para quem procura um lugar tranquilo e que tenha contato com a natureza, o <strong>Jardim Botânico de São Paulo</strong> é uma ótima opção. Fundado em 1928, o jardim botânico conta com 143 hectares, com várias espécies de plantas da flora brasileira.
+          No conjunto arquitetônico-cultural do local destacam-se duas estufas que abrigam plantas típicas da Mata Atlântica e exposições temporárias, o Jardim de Lineu, o portão histórico de 1894, e o marco das nascentes do riacho Ipiranga.<br>
+          <br>O Jardim Botânico funciona de terça-feira a domingo das 9h às 17h (das 9h às 18h durante o horário de verão) e o valor do ingresso é R$ 5 (crianças de até 4 anos não pagam entrada).
+          </p>
+        </div>  
+        </article>
+
+        <hr>
+
+        <section class="container-galeria">
+          <h3>GALERIA DE FOTOS</h3>
+
+          <div id="galeria">
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <div class="card">
+                  <a class="lightbox" href="1-jardim.jpg">
+                    <img src="1-jardim.jpg" alt="Imagem Jardim Botânico 1" class="card-img-top">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                  <a class="lightbox" href="2-jardim.jpg">
+                    <img src="2-jardim.jpg" alt="Imagem Jardim Botânico 2" class="card-img-top">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                  <a class="lightbox" href="3-jardim.jpg">
+                    <img src="3-jardim.jpg" alt="Imagem Jardim Botânico 3" class="card-img-top">
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="col-md-4">
+                <div class="card">
+                  <a class="lightbox" href="4-jardim.jpg">
+                    <img src="4-jardim.jpg" alt="Imagem Jardim Botânico 4" class="card-img-top">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                  <a class="lightbox" href="5-jardim.jpg">
+                    <img src="5-jardim.jpg" alt="Imagem Jardim Botânico 5" class="card-img-top">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                  <a class="lightbox" href="6-jardim.jpg">
+                    <img src="6-jardim.jpg" alt="Imagem Jardim Botânico 6" class="card-img-top">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+          <hr>
+
+          <section class="container-localizacao">
+            <h3>LOCALIZAÇÃO</h3>
+
+            <!-- Google Maps -->
+            <div class="embed-responsive">
+             <div class="mapouter"><div class="gmap_canvas"><iframe width="705" height="321" id="gmap_canvas" src="https://maps.google.com/maps?q=Jardim%20Bot%C3%A2nico%20de%20S%C3%A3o%20Paulo&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a href="https://www.pureblack.de/webdesign-nuernberg/"></a></div><style>.mapouter{text-align:right;height:321px;width:705px;}.gmap_canvas {overflow:hidden;background:none!important;height:321px;width:705px;}</style></div>
+           </div>
+
+          </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p class="text-center">2018 © Visitando - Todos os direitos reservados</p>
+      </footer>
+
+<!-- JavaScript -->
+  <!-- JS  Bootstrap -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+
+   <!-- JS  efeito "slide" -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- JS Galeria -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('#galeria');
+  </script>
+
+  <!-- JS Principal -->
+  <script src="../../js-main.js"></script>
+   
+
+  </body>
+
+ </html>

@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+ overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-content {
+  height: 100vh;
+  display: flex; /*propriedade que permite funcionar as propriedades de baixo*/
+  justify-content: space-around; /*propriedade que faz ficar no centro*/
+  align-items: center; /*propriedade que faz ficar no centro*/
+  color: #FFF;
+  margin: auto;
+  text-align: center;
+  }
+
+.video-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-header video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.video-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg,
+    rgba(238, 38, 85, 0.4),
+    rgba(5, 21, 61, 0.6) 
+  );
+  z-index: 1;
+}
+
+.header-texto {
+  z-index: 2;
+}
+
+.header-texto .imagem-sp {
+  margin-top: 3%;
+  margin-bottom: 0;
+  width: 850px;
+}
+
+.header-texto h1 {
+  color: #FFF;
+  font-weight: 500;
+  font-size: 23px;
+  padding-bottom: 2rem;
+}
+
+.scroll-down {
+  opacity: 1;
+  transition: all .5s ease-in 3s;  
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2.5px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  animation: bounce 2s infinite 2s;
+  transition: all .2s ease-in;
+  transform: scale(1)
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.navbar {
+  background-color: transparent;
+  padding-top: 2%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar-nav {
+  margin-right: 15%;
+}
+
+.navbar-toggler {
+  margin-right: 4%;
+}
+
+.nav-item {
+  color: #FFF;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-right: 50px;
+}
+
+.logo-visitando {
+  padding-left: 16%;
+  width: 260px;
+}
+
+h2 { 
+  font-weight: 500;
+  font-size: 35px;
+  padding-top: 50px;
+}
+
+h3 {  
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.lugares-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.lugares-box .card {
+  min-width: 300px;
+  height: 380px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.card-body a{
+  text-decoration: none; /*tira sublinhado azul*/
+}
+
+.card-container {
+  margin: 50px 20px;
+}
+
+.lugares-container {
+  margin-top: 50px;
+}
+
+.lugares-img-1 {
+  background: linear-gradient(180deg, rgba(0, 164, 181, 0.1), rgba(0, 164, 181, 1)), url(img/home-paulista.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+.lugares-img-1:hover {
+  background-color: #000;
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
+.lugares-img-2 {
+  background: linear-gradient(180deg, rgba(0, 51, 102, 0.2), rgba(0, 51, 102, 1)), url(img/home-ibira.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+.lugares-img-2:hover {
+  background-color: #000;
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
+.lugares-img-3 {
+  background: linear-gradient(180deg, rgba(238, 38, 85, 0.01), rgba(238, 38, 85, 0.8)), url(img/home-liberdade.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+.lugares-img-3:hover {
+  background-color: #000;
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
+.texto-card {
+  text-align: center;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 30px;
+  padding-top: 150px;
+}
+
+#depoimento {
+  width: 85%;
+  margin: auto;
+  padding-top: 60px;
+}
+
+#depoimento h6 {
+  padding-top: 25px;
+  color: #0aa4b5;
+  font-weight: 600;
+}
+
+#depoimento p {
+  font-size: 14px;
+  color: #7D7D7D;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  background-color: #001343;
+  margin-top: 90px;
+}
+
+footer p {
+  color: #FFF;
+  padding-top: 35px;
+}
+
+@media (min-width: 1500px) {
+
+  .header-texto .imagem-sp {
+    width: 1000px !important;
+  }
+
+  .header-texto p {
+    font-size: 30px !important;
+
+  }
+
+  .scroll-down {
+    bottom: 150px !important;
+  }
+
+  .navbar {
+    padding-top: 4% !important;
+
+  }
+
+  .nav-item {
+    font-size: 1.6rem !important;
+  }
+
+  .logo-visitando {
+    width: 280px !important;
+  }
+} 
+
+@media only screen and (max-width: 920px) {
+
+  .nav-item {
+    font-size: 18px !important;
+    padding-right: 20px !important;
+  }
+  .navbar-nav {
+    margin-right: 5px !important;
+  }
+
+  .logo-visitando {
+    width: 165px !important;
+  }
+
+  .header-texto .imagem-sp {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    width: 650px !important ;
+
+  }
+
+  .scroll-down {
+    visibility: hidden !important;
+    display: none !important;
+  }
+
+  .texto-card {
+   font-size: 40px !important;
+ }
+
+  .video-header {
+  height: 80vh !important;
+  width: 100vw !important;
+ }
+
+  .video-overlay {
+  height: 80vh !important;
+  width: 100vw !important;
+  } 
+
+}
+
+@media only screen and (max-width: 575px) {
+
+  .header-texto {
+    margin-top: -160px !important;
+  }
+
+  .logo-visitando {
+    width: 150px !important;
+  }
+
+  .nav-item {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+
+  .navbar {
+    top:0;
+    background: #EE2655 !important;
+    width: 100% !important;
+  }
+
+  .video-header {
+    height: 55vh !important;
+    width: 100vw !important;
+  }
+
+  .video-overlay {
+    height: 55vh !important;
+    width: 100vw !important;
+  }
+
+  .paragrafo-header {
+    font-size: 15px !important;
+  }
+
+  .lugares-container {
+    margin-top: -220px !important;
+  }
+
+  .texto-card {
+
+    font-size: 30px !important;
+  }
+
+  h2 { 
+    font-size: 28px !important;
+  }
+
+  h3 {    
+    font-size: 20px  !important;
+  }
+
+  footer p{
+    font-size: 14px !important;
+  }
+   
+}

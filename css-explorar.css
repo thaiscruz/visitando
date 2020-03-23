@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+ overflow-x: hidden !important;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+  padding-top: 2%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar-nav {
+  margin-right: 15%;
+}
+
+.navbar-toggler {
+  margin-right: 4%;
+}
+
+.nav-item {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-right: 50px;
+}
+
+.logo-visitando {
+  padding-left: 16%;
+  width: 260px;
+}
+
+header {
+  background-image: linear-gradient(90deg,rgba(238, 38, 85, 0.4),rgba(0, 51, 102, 0.6)), url(img/bg-explorar.jpg);
+  background-attachment: fixed; /*efeito parallax*/
+  background-repeat: no-repeat;
+  background-size: cover;	
+  color: #FFF;
+  height: 90vh;
+  position: relative;
+}
+
+.header-texto {
+  position: absolute;
+  left:5%;
+  bottom: 4%;
+}
+
+.header-texto h4 {
+  font-size: 40px;
+  font-weight: 400;
+
+}
+
+.header-texto h1 {
+  font-size: 130px;
+  font-weight: 500;
+	
+}
+
+.container {
+  margin-top: 80px;
+}
+
+.container h2 {
+  margin-bottom: 50px;
+
+}
+
+.box{
+  padding: 1em 0;
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 640px){
+  .box{
+    display: block;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .box{
+    width: 33.33333%;
+  }
+}
+
+.card {
+  border: none;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 350px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.cover {
+  width: 260px;
+  object-fit: cover;
+
+}
+
+.content .content-overlay {
+  background: linear-gradient(180deg, rgba(0, 19, 67, 0.2), rgba(0, 19, 67, 0.8));
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+
+footer {
+  width: 100%;
+  height: 90px;
+  background-color: #001343;
+  margin-top: 90px;
+}
+
+footer p {
+  color: #FFF;
+  padding-top:35px;
+}
+
+@media (min-width: 1500px) {
+
+	.navbar {
+	  padding-top: 4% !important;
+	}
+
+	.nav-item {
+	  font-size: 1.6rem !important;
+	}
+
+	.logo-visitando {
+	  width: 280px !important;
+	}
+} 
+
+@media only screen and (max-width: 920px) {
+
+  .nav-item {
+    font-size: 18px !important;
+    padding-right: 20px !important;
+  }
+  .navbar-nav {
+    margin-right: 5px !important;
+  }
+
+  .logo-visitando {
+    width: 165px !important;
+  }
+
+  .header-texto h4 {
+    font-size: 30px !important;
+
+  }
+
+  .header-texto h1 {
+    font-size: 100px !important;
+  }
+
+}
+
+@media only screen and (max-width: 575px) {
+
+
+  .logo-visitando {
+    width: 150px !important;
+  }
+
+  .nav-item {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+
+  .navbar {
+    top:0;
+    background: #EE2655 !important;
+    width: 100% !important;
+  }
+
+  header {
+
+    height: 50vh !important;
+  }
+
+  .header-texto h4 {
+    font-size: 25px !important;
+  }
+
+  .header-texto h1 {
+    font-size: 55px !important;
+  }
+
+  .container {
+    margin-top: 30px !important;
+  }
+
+  .content-details h3 {
+    font-size: 20px !important;
+  }
+
+  .container h2 {
+    font-size: 24px !important;
+    margin-top: 40px !important;
+    margin-bottom: 30px !important;
+  }
+
+  footer p{
+    font-size: 14px !important;
+  }
+
+}
